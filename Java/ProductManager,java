@@ -56,14 +56,14 @@ public class ProductManager {
         String name = scanner.nextLine();
         System.out.print("Enter product price: ");
         double price = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         products.add(new Product(name, price));
         System.out.println("Product added successfully.");
     }
 
     private static void sortProductsByName() {
-        products.sort(Comparator.comparing(p -> p.name.toLowerCase())); // Case-insensitive sorting
+        products.sort(Comparator.comparing(p -> p.name.toLowerCase())); 
         System.out.println("Products sorted by name.");
     }
 
